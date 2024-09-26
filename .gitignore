@@ -1,0 +1,9 @@
+.ruff_cache/
+.vscode/
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+*.zip
+*.safetensors
