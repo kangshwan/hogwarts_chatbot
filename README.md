@@ -39,7 +39,9 @@ Other detailed requirements can be found in the "requirements.txt" file!
 ### [Harry Potter Lexicon](https://www.hp-lexicon.org/)
 
 The QnA set was extracted using Gemma 2b-it from data crawled from the Harry Potter Lexicon.
-
+# Demo
+Run the demo on Colab!  
+[Colab link](https://colab.research.google.com/drive/18ZOVYbVuf2S6oNOyGdGtDCb8dewoumSy#scrollTo=zLbEoeFq2IAc)
 # Training
 You can try your training [here!](https://www.kaggle.com/code/kangseunghwan/harry-potter-lexicon-fine-tuning/edit/run/198044084)  
 This Kaggle link includes the first version of the dataset!
