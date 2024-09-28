@@ -207,14 +207,16 @@ def run_model(chat_history, request: gr.Request):
             Slytherin values ambition, cunning, leadership, and resourcefulness.
 
             ### Instruction:
-            Please format the response like this:
+            1. Extract three reasons directly from the provided input's Answer.
+            2. Do not generate or invent reasons. Use only the input to fill in the reasons.
+            3. Must use the format below:
             'Your house is [house]!
             Here's why:
             1. [reason 1]
             2. [reason 2]
             3. [reason 3]
             Welcome to your new house at Hogwarts!'
-            
+
             ### Input:
             {user_responses}
 
@@ -280,13 +282,17 @@ def result_img(chat_history, textbox, submit_btn,  request: gr.Request):
             quit_counter = 1
             house = chat_history[-1][1]
             # print(house)
-            if "gryffindor" in house.lower():
+            if "your house is gryffindor" in house.lower():
+                print("gryffindor")
                 insignia =  show_image("./IMG/sorting_hat_gryffindor.png")
-            elif "hufflepuff" in house.lower():
+            elif "your house is hufflepuff" in house.lower():
+                print("hufflepuff")
                 insignia =  show_image("./IMG/sorting_hat_hufflepuff.png")
-            elif "ravenclaw" in house.lower():
+            elif "your house is ravenclaw" in house.lower():
+                print("ravenclaw")
                 insignia =  show_image("./IMG/sorting_hat_ravenclaw.png")
-            elif "slytherin" in house.lower():
+            elif "your house is slytherin" in house.lower():
+                print("slytherin")
                 insignia =  show_image("./IMG/sorting_hat_slytherin.png")
             else:
                 return show_image("./IMG/sorting_hat.jpg"), textbox, disable_btn
