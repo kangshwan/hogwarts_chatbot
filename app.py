@@ -11,7 +11,7 @@ from time import sleep
 
 class HPChatBot:
     def __init__(self,
-                 model_path: str = 'rnltls/harrypotter_lexicon_finetune',
+                 model_path: str = 'rnltls/harrypotter_lexicon_finetune_v3',
                  device_map: str = 'auto',
                  load_in_4_bit: bool = True,
                  **quant_kwargs) -> None:
